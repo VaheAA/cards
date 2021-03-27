@@ -1,0 +1,117 @@
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  }
+ section {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+ }
+ .title {
+   text-align: center;
+   width: 50%;
+   margin: 0 auto;
+ }
+ .title > * {
+  padding: 5px;
+ }
+ #h1 {
+   color: hsl(229, 6%, 66%);
+   font-weight: 400;
+   font-size: 2rem;
+ }
+ #h2 {
+color: hsl(234, 12%, 34%);
+font-weight: 600;
+font-size: 2rem;
+ }
+ #title-p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+  font-size: .85rem;
+ }
+ .cards {
+   display: flex;
+   align-items: center;
+ }
+ .centered-cards {
+   display: block;
+   width: 100%;
+ }
+ .card {
+   background-color: white;
+   width: 100%;
+   height: 240px;
+   margin: 15px;
+   border-radius: 5px;
+ }
+ .card > h3 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+ }
+ .card > p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+ }
+ .card-1 {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  background-image: url('/images/icon-supervisor.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 80%;
+ }
+ .card-2 {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  background-image: url('/images/icon-team-builder.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 80%;
+ }
+ .card-3 {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  background-image: url('/images/icon-karma.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 80%;
+ }
+ .card-4 {
+  border-top: 4px solid hsl(212, 86%, 64%);
+  background-image: url('/images/icon-calculator.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 80%;
+ }
+ .card > * {
+   padding: 10px;
+   margin-left: 10px;
+ }
+
+ @media only screen and (max-width: 600px) {
+   section {
+     display: block;
+     max-width: 100%;
+   }
+   .title {
+     width: 100%;
+   }
+   .cards {
+     display: block;
+     max-width: 100%;
+   }
+   .card {
+    max-width: 100%;
+   }
+ }
